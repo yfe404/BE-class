@@ -1,6 +1,6 @@
 
 section .data
-    msg db 'Hello, World!', 10     ; The message plus newline (ASCII 10)
+    msg db 'Hello, World!'
 
 section .text
     global _start
