@@ -1,3 +1,4 @@
+
 section .data
     msg db 'Hello, World!', 10     ; The message plus newline (ASCII 10)
 
