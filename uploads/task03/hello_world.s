@@ -1,6 +1,6 @@
 
 section .data
-    msg db 'Hello, World!'
+    msg db 'Hello World!'
 
 section .text
     global _start
@@ -11,7 +11,7 @@ _start:
     mov rax, 1                    ; syscall number 1 = sys_write
     mov rdi, 1                    ; file descriptor 1 = stdout
     mov rsi, msg                  ; pointer to message
-    mov rdx, 14                   ; message length
+    mov rdx, 12                   ; message length
     syscall                      ; make kernel call
 
     mov eax, 60       ; syscall number for exit
